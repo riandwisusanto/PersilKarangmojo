@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="parent_content" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.subpersil">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #00bbe6;">
+         <children>
+            <Separator layoutY="96.0" prefWidth="900.0" />
+            <Button layoutX="7.0" layoutY="152.0" mnemonicParsing="false" onAction="#kelas_desa" prefHeight="38.0" prefWidth="100.0" stylesheets="@../style/button_batal.css" text="Kelas Desa" />
+            <Button layoutX="7.0" layoutY="106.0" mnemonicParsing="false" onAction="#data_persil" prefHeight="38.0" prefWidth="100.0" stylesheets="@../style/button_tambah.css" text="Data Persil" />
+            <Text fontSmoothingType="LCD" layoutX="279.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATA PERSIL DESA KARANGMOJO">
+               <font>
+                  <Font name="Calibri Bold" size="29.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Text>
+            <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="70.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="113.0" layoutY="100.0" orientation="VERTICAL" prefHeight="500.0" />
+            <Text fx:id="komen" layoutX="439.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+            <Pane layoutX="120.0" layoutY="100.0" prefHeight="495.0" prefWidth="775.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Button fx:id="tambah_data" layoutX="12.0" layoutY="452.0" mnemonicParsing="false" onAction="#tambah_data" prefHeight="34.0" prefWidth="83.0" stylesheets="@../style/button_tambah.css" text="Tambah">
+                     <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/tambah.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <TextField fx:id="filter" layoutX="434.0" layoutY="14.0" prefHeight="34.0" prefWidth="330.0" promptText="Cari Data ..." styleClass="field" stylesheets="@../style/css.css" />
+                  <TableView fx:id="tab_subpersil" layoutX="375.0" layoutY="59.0" prefHeight="368.0" prefWidth="389.0" stylesheets="@../style/tabelcss.css">
+                     <columns>
+                        <TableColumn fx:id="subpersil_no" prefWidth="154.0" text="Nomor &amp; Huruf Persil" />
+                        <TableColumn fx:id="subpersil_nomor" minWidth="0.0" prefWidth="98.0" text="Kelas Desa" />
+                        <TableColumn fx:id="subpersil_tgl" prefWidth="136.0" text="Tanggal Perubahan" />
+                     </columns>
+                  </TableView>
+                  <Separator layoutX="16.0" layoutY="64.0" prefHeight="5.0" prefWidth="346.0" />
+                  <Button fx:id="perbaharui_data" disable="true" layoutX="101.0" layoutY="452.0" mnemonicParsing="false" onAction="#perbaharui_data" prefHeight="34.0" prefWidth="76.0" styleClass="button1" stylesheets="@../style/css.css" text="Edit">
+                     <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="hapus_data" disable="true" layoutX="262.0" layoutY="452.0" mnemonicParsing="false" onAction="#hapus_data" prefHeight="34.0" prefWidth="83.0" stylesheets="@../style/button_batal.css" text="Hapus">
+                     <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/hapus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text layoutX="85.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama : ">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="report" layoutX="14.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="batal" disable="true" layoutX="181.0" layoutY="452.0" mnemonicParsing="false" onAction="#batal" prefHeight="34.0" prefWidth="76.0" stylesheets="@../style/button_batal.css" text="Batal">
+                     <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/batal.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="refresh" layoutX="384.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_refresh" prefHeight="34.0" prefWidth="38.0" styleClass="buttontambah" stylesheets="@../style/css.css">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/refresh.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text layoutX="85.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No.     : ">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="nama_persil" layoutX="157.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rian">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="nomor_persil" layoutX="157.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="nomor_huruf" layoutX="15.0" layoutY="92.0" prefHeight="34.0" prefWidth="330.0" styleClass="field" stylesheets="@../style/css.css" />
+                  <TextField fx:id="k_ha" layoutX="50.0" layoutY="250.0" prefHeight="34.0" prefWidth="139.0" styleClass="field" stylesheets="@../style/css.css" />
+                  <Text layoutX="15.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nomor &amp; Huruf Persil" />
+                  <ComboBox fx:id="kelas_desa" layoutX="15.0" layoutY="151.0" prefHeight="34.0" prefWidth="278.0" styleClass="spinner" stylesheets="@../style/spinner.css" />
+                  <Text layoutX="15.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kelas Desa" />
+                  <Text layoutX="15.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kohir Desa">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="33.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Luas Tanah">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="51.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ha" />
+                  <TextField fx:id="k_rp" layoutX="204.0" layoutY="250.0" prefHeight="34.0" prefWidth="139.0" styleClass="field" stylesheets="@../style/css.css" />
+                  <Text layoutX="184.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pajak Tanah">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="207.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp." />
+                  <TextArea fx:id="ket" layoutX="14.0" layoutY="373.0" prefHeight="74.0" prefWidth="330.0" styleClass="field" stylesheets="@../style/css.css" />
+                  <DatePicker fx:id="tgl_perubahan" layoutX="16.0" layoutY="312.0" prefHeight="34.0" prefWidth="330.0" stylesheets="@../style/datepicker.css" />
+                  <Text layoutX="20.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tanggal Perubahan" />
+                  <Text layoutX="15.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Keterangan Perubahan" />
+                  <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_back" prefHeight="34.0" prefWidth="38.0" stylesheets="@../style/button_batal.css">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/back.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Separator layoutX="357.0" layoutY="66.0" orientation="VERTICAL" prefHeight="419.0" prefWidth="9.0" />
+                  <TextField fx:id="total_rp" editable="false" layoutX="375.0" layoutY="452.0" prefHeight="34.0" prefWidth="165.0" styleClass="field" stylesheets="@../style/css.css" />
+                  <TextField fx:id="total_s" editable="false" layoutX="599.0" layoutY="452.0" prefHeight="34.0" prefWidth="165.0" styleClass="field" stylesheets="@../style/css.css" visible="false" />
+                  <Text layoutX="376.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Rp." />
+                  <Text layoutX="599.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total S." visible="false" />
+                  <Button fx:id="tambah_kelas" layoutX="301.0" layoutY="151.0" mnemonicParsing="false" onAction="#tambah_kelas" prefHeight="34.0" prefWidth="38.0" stylesheets="@../style/button_tambah.css">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/tambah.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <Button layoutX="7.0" layoutY="201.0" mnemonicParsing="false" onAction="#ie" prefHeight="38.0" prefWidth="100.0" styleClass="button1" stylesheets="@../style/css.css" text="I/E Data" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

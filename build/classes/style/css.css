@@ -1,0 +1,110 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 11, 2019, 6:29:12 AM
+    Author     : Iqbal
+*/
+
+.buttonhome{
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-background-radius: 15px;
+    -fx-border-width: 0px;
+}
+.buttonhome:hover{
+    -fx-background-color: rgba(0,0,0,0.05);
+    -fx-background-radius: 15px;
+}
+.fieldlogin{
+    -fx-background-color: rgba(0,0,0,0);
+}
+.field{
+    -fx-background-color: #f7f7f7;
+    -fx-border-width: 0.5px;
+    -fx-border-color: #c9c9c9;
+    -fx-border-radius: 2px; 
+}
+.field:focused{
+    -fx-background-color: #ffffff;
+    -fx-border-width: 1px;
+    -fx-border-color: #1eb4d6;
+    -fx-border-radius: 3px; 
+}
+.textarea{
+    -fx-background-color: #f7f7f7;
+}
+.textarea .content{
+    -fx-background-color: #f7f7f7;
+    -fx-border-width: 0.2px;
+    -fx-border-color: #c9c9c9;
+}
+.textarea:focused .content{
+    -fx-background-color: #ffffff;
+    -fx-border-width: 0.5px;
+    -fx-border-color: #1eb4d6;
+}
+.buttomrandom{
+-fx-background-color : #efefef;
+-fx-border-color: #13438e;
+}
+.buttomrandom:hover{
+-fx-background-color : #ffffff;
+}
+.buttomrandom:pressed{
+-fx-background-color : #3d6dba;
+-fx-text-fill: #FFF;
+}
+.button1{
+-fx-background-color : #FFF;
+-fx-border-color: #00cc25;
+-fx-text-fill:  #009b1c;
+}
+.button1:hover{
+-fx-background-color : #00cc25;
+-fx-text-fill:  #FFF;
+}
+.button1:pressed{
+-fx-background-color : #00c120;
+-fx-text-fill: #FFF;
+}
+.buttonbatal{
+-fx-background-color : #FFF;
+-fx-border-color: rgba(255, 48, 48,1);
+-fx-text-fill:  rgba(255, 48, 48,1);
+}
+.buttonbatal:hover {
+-fx-background-color: rgba(255, 48, 48,1); 
+-fx-text-fill:  #FFF;
+}
+.buttonbatal:pressed {
+-fx-background-color : #ff2121;
+-fx-text-fill: #FFF;
+}
+.buttontambah{
+-fx-background-color : #FFF;
+-fx-border-color: #355ECE;
+-fx-text-fill:  #0C3988;
+}
+.buttontambah:hover{
+-fx-background-color : #355ECE;
+-fx-text-fill:  #FFF;
+}
+.buttontambah:pressed{
+-fx-background-color : #2755d1;
+-fx-text-fill: #FFF;
+}
+.logout{
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-text-fill: #707070;
+    -fx-border-color: #707070;
+    -fx-border-width: 0.5px;
+    -fx-border-radius: 3px;
+}
+.logout:hover{
+    -fx-background-color: rgba(255, 48, 48,0.8);   
+    -fx-text-fill: #fff;
+    -fx-border-width: 0.5px;
+    -fx-border-color: rgba(255, 48, 48,0.8);
+}

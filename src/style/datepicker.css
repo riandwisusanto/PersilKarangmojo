@@ -1,0 +1,20 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 23, 2019, 2:59:53 PM
+    Author     : Iqbal
+*/
+
+.date-picker > .text-field {
+    -fx-background-color: #f7f7f7;
+    -fx-border-width: 1px;
+    -fx-border-color: #e0e0e0;
+}
+.date-picker > .text-field:focused {
+    -fx-background-color: #ffffff;
+    -fx-border-width: 1px;
+    -fx-border-color: #1eb4d6;
+}

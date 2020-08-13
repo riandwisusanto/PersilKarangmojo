@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 23, 2019, 2:01:01 PM
+    Author     : Iqbal
+*/
+.spinner {
+    -fx-border-radius: 0px;
+}
+.spinner:focused {
+    -fx-border-width: 0.2px;
+}
+.spinner > .text-field {
+    -fx-background-color: #f7f7f7;
+    -fx-border-width: 0.5px;
+    -fx-border-color: #c9c9c9;
+}
+.spinner > .text-field:focused {
+    -fx-background-color: #ffffff;
+    -fx-border-width: 0.5px;
+    -fx-border-color:  #1eb4d6;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-body-color: #ffffff;
+}
+
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+    -fx-body-color: #2abdf3;
+}
+
+.spinner .increment-arrow-button:hover:pressed,
+.spinner .decrement-arrow-button:hover:pressed,
+.spinner .increment-arrow-button:pressed,
+.spinner .decrement-arrow-button:pressed {
+    -fx-body-color: #1eb4d6;
+}
