@@ -28,7 +28,7 @@ public class main extends Application {
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
-        Image gambar = new Image("/images/LOGO KKN.png");
+        Image gambar = new Image("/images/logo.png");
         stage.getIcons().add(gambar);
         stage.setTitle("DPK");
         stage.sizeToScene();
