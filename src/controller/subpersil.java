@@ -564,7 +564,8 @@ public class subpersil implements Initializable {
     @FXML
     void tambah_kelas(ActionEvent event) {
         TextInputDialog dialog = new TextInputDialog("");
-        dialog.setContentText("Isi nama kelas desa :");
+        dialog.initStyle(StageStyle.UNDECORATED);
+        dialog.setHeaderText("Tambah Kelas Desa");
 
         // Traditional way to get the response value.
         Optional<String> result = dialog.showAndWait();
